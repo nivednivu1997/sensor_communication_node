@@ -29,3 +29,31 @@ This ROS 2 node communicates with a sensor over TCP using a custom protocol. It 
 ### Start the Sensor with a Custom Interval
 ```bash
 ros2 service call /start_sensor std_msgs/Int32 "{data: 500}"
+
+### Installation and Usage
+
+- Clone the Repository
+
+git clone https://github.com/nivednivu1997/sensor_communication_node.git
+cd sensor_communication_node
+
+- Build the ROS 2 Workspace
+
+colcon build
+source install/setup.bash
+
+- Run the Node
+
+ros2 run course1_pkg sensor_node
+
+Start the Sensor with a Custom Interval
+
+ros2 service call /start_sensor std_msgs/Int32 "{data: 500}"
+
+Stop the Sensor
+
+ros2 service call /stop_sensor std_srvs/Empty
+
+
+
+
