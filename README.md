@@ -41,11 +41,11 @@ source install/setup.bash
   
 ros2 run course1_pkg sensor_node
 
-Start the Sensor with a Custom Interval
+- Start the Sensor with a Custom Interval
 
-ros2 service call /start_sensor std_msgs/Int32 "{data: 500}"
+ros2 service call /start_sensor std_msgs/Int32 "{data: interval}"
 
-Stop the Sensor
+- Stop the Sensor
 
 ros2 service call /stop_sensor std_srvs/Empty
 
