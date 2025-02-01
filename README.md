@@ -34,7 +34,7 @@ cd sensor_communication_node
 
 - Build the ROS 2 Workspace
   
-colcon build
+colcon build &&
 source install/setup.bash
 
 - Run the Node
